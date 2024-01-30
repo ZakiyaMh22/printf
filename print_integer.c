@@ -14,6 +14,7 @@ void print_integer(int nums, int *length)
 	{
 		_putchar('-');
 		_putchar('2');
+		nums = 147483648;
 		(*length) += 2;
 	}
 	else if (nums < 0)

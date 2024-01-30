@@ -22,10 +22,11 @@ void _test(char c, va_list arg, int *ptr)
 			break;
 		case '%':
 			_putchar('%');
+			(*ptr)++;
+			break;
 		case 'd':
 		case 'i':
-		case 'u':
-			print_integer(va_arg(arg, long int), len);
+			print_integer(va_arg(arg, long int), ptr);
 		default:
 			break;
 	}

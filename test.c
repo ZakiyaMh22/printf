@@ -27,7 +27,6 @@ void _test(char c, va_list arg, int *ptr)
 		case 'd':
 		case 'i':
 			print_integer(va_arg(arg, long int), ptr);
-			(*ptr)++;
 			break;
 		default:
 			_putchar('%');

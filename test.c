@@ -25,7 +25,7 @@ void _test(char c, va_list arg, int *ptr)
 		case 'd':
 		case 'i':
 		case 'u':
-			(*ptr) += print_integer(va_arg(arg, long int), len);
+			print_integer(va_arg(arg, long int), len);
 		default:
 			break;
 	}

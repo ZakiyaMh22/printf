@@ -6,10 +6,8 @@
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int print_str(char *str);
+int print_str(va_list arg);
 void _test(char c, va_list arg, int *ptr);
-<<<<<<< HEAD
-void print_int(int num, int *len);
 void print_integer(int num, int *length);
 
 

@@ -27,6 +27,11 @@ void _test(char c, va_list arg, int *ptr)
 		case 'i':
 			print_int(va_arg(arg, int), ptr);
 			break;
+			(*ptr)++;
+			break;
+		case 'd':
+		case 'i':
+			print_integer(va_arg(arg, long int), ptr);
 		default:
 			break;
 	}
